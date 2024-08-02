@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D3FEND EMBEDDED</title>
+
+  <script>
+    const user_data = {
+  "version": "1",
+  "isReadonly": false,
+  "isDrawerOpen": true,
+  "showLegend": true,
+  "techniqueMappingMode": "multiColor",
+  "selectedProfile": 0,
+  "selectedStore": "layers",
+  "containerSize": 0.8,
+  "matrixSize": 1,
+  "associationMode": false,
+  "matrixCommentMode": false,
+  "localStorageWarning": false,
+  "profiles": [
+    {
+      "name": "Example Profile",
+      "description": "Example D3FEND Profile",
+      "id": 0,
+      "includedLayers": [
+        "endpoint-detection-response-b5e1b37fe803",
+        "network-detection-response-bd0a1550c68f",
+        "web-application-firewall-e2b69b0e42e7",
+        "network-intrusion-detection-system-53345eadd88f",
+        "idam-analytics-suite-05a3693fb7f6",
+        "network-vulnerability-scanner-5bdfd415a60c",
+        "security-orchestration-automation-and-response-861f9e04e823",
+        "operational-test-status-3e2e05ea8e07"
+      ]
+    }
+  ],
+  "layers": {
+    "zero-trust-kdjj2mvnvjkkd": {
+      "id": "zero-trust-kdjj2mvnvjkkd",
+      "description": "Testing the description",
+      "name": "Zero-Trust",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [
+        "role-based-access-hdjkfkkbvgn",
+        "continuous-verification-jkqwwer",
+        "geo-location-ie83909"
+      ],
+      "checked": true
+    },
+    "role-based-access-hdjkfkkbvgn": {
+      "id": "role-based-access-hdjkfkkbvgn",
+      "description": "Testing the description",
+      "name": "Role-Based Access",
+      "techniques": [
+        {
+          "id": "d3f:DataInventory",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ServiceDependencyMapping",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AccessModeling",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AssetInventory",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "color": "#ef0b0b",
+      "checked": true
+    },
+    "least-priviledge-27kdjkdfkj": {
+      "id": "least-priviledge-27kdjkdfkj",
+      "description": "Testing the description",
+      "name": "Least Priviledge",
+      "techniques": [
+        {
+          "id": "d3f:DNSAllowlisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:DNSDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ForwardResolutionDomainDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:HierarchicalDomainDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:HomoglyphDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ForwardResolutionIPDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ReverseResolutionIPDenylisting",
+          "comment": ""
+        },
+        {
+          "id": "d3f:InboundTrafficFiltering",
+          "comment": ""
+        },
+        {
+          "id": "d3f:OutboundTrafficFiltering",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AccountLocking",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessTermination",
+          "comment": ""
+        }
+      ],
+      "color": "#bbc171",
+      "checked": true,
+      "children": []
+    },
+    "continuous-verification-jkqwwer": {
+      "id": "continuous-verification-jkqwwer",
+      "description": "Testing the description",
+      "name": "Continuous Verification",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [],
+      "checked": false
+    },
+    "geo-location-ie83909": {
+      "id": "geo-location-ie83909",
+      "description": "Testing the description",
+      "name": "Geo Location",
+      "techniques": [
+        {
+          "id": "d3f:TransferAgentAuthentication",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ServiceDependencyMapping",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AccessModeling",
+          "comment": ""
+        }
+      ],
+      "color": "#ef0b0b",
+      "children": [],
+      "checked": true
+    },
+    "bandwidth-control-and-monitoring-837fdrkdm": {
+      "id": "bandwidth-control-and-monitoring-837fdrkdm",
+      "description": "Testing the description",
+      "name": "Bandwidth Control and Monitoring",
+      "techniques": [],
+      "children": [],
+      "color": "#ef0b0b",
+      "checked": true
+    },
+    "web-filtering-3iejkdfmv": {
+      "id": "web-filtering-3iejkdfmv",
+      "description": "Testing the description",
+      "name": "Web Filtering",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [
+        "web-filtering-rule-1-e639d37443c9"
+      ],
+      "checked": true
+    },
+    "sandboxing-kdnvmvmmv": {
+      "id": "sandboxing-kdnvmvmmv",
+      "description": "Testing the description",
+      "name": "Sandboxing",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [],
+      "checked": true
+    },
+    "threat-prevention-kdkvsaka": {
+      "id": "threat-prevention-kdkvsaka",
+      "description": "Testing the description",
+      "name": "Threat Prevention",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [],
+      "checked": true
+    },
+    "application-and-identiy-based-inspection-dkvn": {
+      "id": "application-and-identiy-based-inspection-dkvn",
+      "description": "Testing the description",
+      "name": "Application and Identiy-based Inspection",
+      "techniques": [
+        {
+          "id": "d3f:HomoglyphDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:URLAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:CertificateAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PassiveCertificateAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:IPCTrafficAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthenticationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthorizationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:DomainAccountMonitoring",
+          "comment": ""
+        },
+        {
+          "id": "d3f:JobFunctionAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:LocalAccountMonitoring",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ResourceAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:SessionDurationAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UserDataTransferAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UserGeolocationLogonPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AdministrativeNetworkActivityAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:Client-serverPayloadProfiling",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ConnectionAttemptAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:DNSTrafficAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:NetworkTrafficCommunityDeviation",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PerHostDownload-UploadRatioAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProtocolMetadataAnomalyDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RelayPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RemoteTerminalSessionDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RPCTrafficAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FirmwareBehaviorAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FirmwareEmbeddedMonitoringCode",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PeripheralFirmwareVerification",
+          "comment": ""
+        },
+        {
+          "id": "d3f:SystemFirmwareVerification",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FileIntegrityMonitoring",
+          "comment": ""
+        }
+      ],
+      "color": "#817fcc",
+      "checked": true,
+      "children": []
+    },
+    "scalability-kdnvmv": {
+      "id": "scalability-kdnvmv",
+      "description": "Testing the description",
+      "name": "Scalability",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [],
+      "checked": true
+    },
+    "next-generation-firewall-kjlknlkn": {
+      "id": "next-generation-firewall-kjlknlkn",
+      "description": "Testing the description",
+      "name": "Next-Generation Firewall",
+      "techniques": [],
+      "color": "#ef0b0b",
+      "children": [
+        "web-filtering-3iejkdfmv",
+        "sandboxing-kdnvmvmmv",
+        "threat-prevention-kdkvsaka"
+      ],
+      "checked": true
+    },
+    "claimed-dkjndlkdj": {
+      "id": "claimed-dkjndlkdj",
+      "description": "Testing the description",
+      "name": "Claimed",
+      "checked": true,
+      "techniques": [],
+      "color": "#98d0A9",
+      "children": [
+        "scalability-kdnvmv",
+        "application-and-identiy-based-inspection-dkvn"
+      ]
+    },
+    "tested-dnkljlkldjs": {
+      "id": "tested-dnkljlkldjs",
+      "description": "Testing the description",
+      "name": "Tested",
+      "checked": true,
+      "techniques": [
+        {
+          "id": "d3f:AdministrativeNetworkActivityAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:Client-serverPayloadProfiling",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ConnectionAttemptAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:DNSTrafficAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:NetworkTrafficCommunityDeviation",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PerHostDownload-UploadRatioAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProtocolMetadataAnomalyDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RelayPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RemoteTerminalSessionDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RPCTrafficAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "color": "#ec4327"
+    },
+    "integration-jksieufnvdkd": {
+      "id": "integration-jksieufnvdkd",
+      "description": "Testing the description",
+      "name": "Integration",
+      "techniques": [],
+      "children": [
+        "least-priviledge-27kdjkdfkj"
+      ],
+      "checked": true,
+      "color": "#ffcc80"
+    },
+    "web-filtering-rule-1-e639d37443c9": {
+      "id": "web-filtering-rule-1-e639d37443c9",
+      "name": "Web Filtering Rule 1 ",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:OutboundTrafficFiltering",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#ef0b0b"
+    },
+    "endpoint-detection-response-b5e1b37fe803": {
+      "id": "endpoint-detection-response-b5e1b37fe803",
+      "name": "Endpoint Detection & Response",
+      "description": "",
+      "techniques": [],
+      "children": [
+        "process-analysis-module-03228699d908",
+        "file-analysis-module-53b1557a8c3f",
+        "inventory-module-cd27dd8b9898"
+      ],
+      "checked": true,
+      "color": "#12f576"
+    },
+    "network-detection-response-bd0a1550c68f": {
+      "id": "network-detection-response-bd0a1550c68f",
+      "name": "Network Detection & Response",
+      "description": "",
+      "techniques": [],
+      "children": [
+        "ueba-module-45cfb57fb917",
+        "anomaly-analytics-f62110fc7f8d"
+      ],
+      "checked": true,
+      "color": "#9ff604"
+    },
+    "web-application-firewall-e2b69b0e42e7": {
+      "id": "web-application-firewall-e2b69b0e42e7",
+      "name": "Web Application Firewall",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AuthenticationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthorizationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ResourceAccessPatternAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#e6f62a"
+    },
+    "network-intrusion-detection-system-53345eadd88f": {
+      "id": "network-intrusion-detection-system-53345eadd88f",
+      "name": "Network Intrusion Detection System",
+      "description": "",
+      "techniques": [],
+      "children": [
+        "ids-vendor-signatures-99c3ce856ebe"
+      ],
+      "checked": true,
+      "color": "#f6bf37"
+    },
+    "idam-analytics-suite-05a3693fb7f6": {
+      "id": "idam-analytics-suite-05a3693fb7f6",
+      "name": "IDAM Analytics Suite",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AuthenticationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthorizationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UserGeolocationLogonPatternAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#f67518"
+    },
+    "network-vulnerability-scanner-5bdfd415a60c": {
+      "id": "network-vulnerability-scanner-5bdfd415a60c",
+      "name": "Network Vulnerability Scanner",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AssetVulnerabilityEnumeration",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ContainerImageAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:NetworkNodeInventory",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PassiveLogicalLinkMapping",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ServiceDependencyMapping",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#0075ff"
+    },
+    "process-analysis-module-03228699d908": {
+      "id": "process-analysis-module-03228699d908",
+      "name": "Process Analysis Module",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:ProcessSelf-ModificationDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessSpawnAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessLineageAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ScriptExecutionAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:SystemCallAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FileCreationAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:JobFunctionAccessPatternAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#12f576"
+    },
+    "file-analysis-module-53b1557a8c3f": {
+      "id": "file-analysis-module-53b1557a8c3f",
+      "name": "File Analysis Module",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:DynamicAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FileHashing",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FileContentAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:FileContentRules",
+          "comment": ""
+        }
+      ],
+      "children": [
+        "custom-rules-9bcb48770338",
+        "vendor-supplied-rules-7efac2058dcb"
+      ],
+      "checked": true,
+      "color": "#4cfe4b"
+    },
+    "inventory-module-cd27dd8b9898": {
+      "id": "inventory-module-cd27dd8b9898",
+      "name": "Inventory Module",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:SoftwareInventory",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AssetVulnerabilityEnumeration",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#55fe38"
+    },
+    "custom-rules-9bcb48770338": {
+      "id": "custom-rules-9bcb48770338",
+      "name": "Custom Rules",
+      "description": "",
+      "techniques": [],
+      "children": [
+        "rule-1-fc6354ccbfc9",
+        "rule-2-11e6773a42cb"
+      ],
+      "checked": true,
+      "color": "#37ff2a"
+    },
+    "rule-1-fc6354ccbfc9": {
+      "id": "rule-1-fc6354ccbfc9",
+      "name": "Rule 1",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:FileContentRules",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#12f576"
+    },
+    "rule-2-11e6773a42cb": {
+      "id": "rule-2-11e6773a42cb",
+      "name": "Rule 2",
+      "description": "",
+      "techniques": [],
+      "children": [],
+      "checked": true,
+      "color": "#36fe3b"
+    },
+    "vendor-supplied-rules-7efac2058dcb": {
+      "id": "vendor-supplied-rules-7efac2058dcb",
+      "name": "Vendor Supplied Rules",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AuthenticationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthorizationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ResourceAccessPatternAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#23fe36"
+    },
+    "ueba-module-45cfb57fb917": {
+      "id": "ueba-module-45cfb57fb917",
+      "name": "UEBA Module",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AuthorizationEventThresholding",
+          "comment": ""
+        },
+        {
+          "id": "d3f:JobFunctionAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ResourceAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:SessionDurationAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UserDataTransferAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UserGeolocationLogonPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:WebSessionActivityAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthenticationEventThresholding",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#9ff604"
+    },
+    "anomaly-analytics-f62110fc7f8d": {
+      "id": "anomaly-analytics-f62110fc7f8d",
+      "name": "Anomaly Analytics",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AdministrativeNetworkActivityAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:Client-serverPayloadProfiling",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ConnectionAttemptAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:InboundSessionVolumeAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:NetworkTrafficCommunityDeviation",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PerHostDownload-UploadRatioAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProtocolMetadataAnomalyDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RelayPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RemoteTerminalSessionDetection",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RPCTrafficAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#9ff604"
+    },
+    "ids-vendor-signatures-99c3ce856ebe": {
+      "id": "ids-vendor-signatures-99c3ce856ebe",
+      "name": "IDS Vendor Signatures",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:AdministrativeNetworkActivityAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ConnectionAttemptAnalysis",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#f6bf37"
+    },
+    "security-orchestration-automation-and-response-861f9e04e823": {
+      "id": "security-orchestration-automation-and-response-861f9e04e823",
+      "name": "Security Orchestration Automation and Response",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:EmailRemoval",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AccountLocking",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthenticationCacheInvalidation",
+          "comment": ""
+        },
+        {
+          "id": "d3f:CredentialRevoking",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessTermination",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessSuspension",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RestoreNetworkAccess",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RestoreUserAccountAccess",
+          "comment": ""
+        },
+        {
+          "id": "d3f:UnlockAccount",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RestoreFile",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#7ecdf5"
+    },
+    "operational-test-status-3e2e05ea8e07": {
+      "id": "operational-test-status-3e2e05ea8e07",
+      "name": "Operational Test Status",
+      "description": "",
+      "techniques": [
+        {
+          "id": "d3f:DynamicAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ConnectionAttemptAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:PerHostDownload-UploadRatioAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:RelayPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ProcessSpawnAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ScriptExecutionAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:JobFunctionAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ResourceAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:AuthenticationCacheInvalidation",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "checked": true,
+      "color": "#ff260c"
+    }
+  },
+  "attack": {},
+  "rootTemplates": [
+    "firewall-kdjenyeurhg",
+    "threat-prevention-kdkvsaka"
+  ],
+  "templates": {
+    "firewall-kdjenyeurhg": {
+      "id": "firewall-kdjenyeurhg",
+      "description": "Testing the description",
+      "name": "Firewall",
+      "techniques": [],
+      "checked": true,
+      "color": "#7078A4",
+      "children": [
+        "bandwidth-control-and-monitoring-837fdrkdm"
+      ]
+    },
+    "bandwidth-control-and-monitoring-837fdrkdm": {
+      "id": "bandwidth-control-and-monitoring-837fdrkdm",
+      "description": "Testing the description",
+      "name": "Bandwidth Control and Monitoring",
+      "techniques": [
+        {
+          "id": "d3f:SoftwareUpdate",
+          "comment": ""
+        },
+        {
+          "id": "d3f:ByteSequenceEmulation",
+          "comment": ""
+        },
+        {
+          "id": "d3f:JobFunctionAccessPatternAnalysis",
+          "comment": ""
+        },
+        {
+          "id": "d3f:NetworkTrafficFiltering",
+          "comment": ""
+        }
+      ],
+      "children": [],
+      "color": "#7078A4",
+      "checked": true
+    },
+    "web-filtering-3iejkdfmv": {
+      "id": "web-filtering-3iejkdfmv",
+      "name": "Web Filtering",
+      "description": "Testing the description",
+      "techniques": [],
+      "children": [],
+      "color": "#7078A4",
+      "checked": true
+    },
+    "sandboxing-kdnvmvmmv": {
+      "id": "sandboxing-kdnvmvmmv",
+      "description": "Testing the description",
+      "name": "Sandboxing",
+      "techniques": [],
+      "children": [],
+      "checked": true,
+      "color": "#BB5883"
+    },
+    "threat-prevention-kdkvsaka": {
+      "id": "threat-prevention-kdkvsaka",
+      "name": "Threat Prevention",
+      "description": "Testing the description",
+      "techniques": [],
+      "children": [],
+      "color": "#BB5883",
+      "checked": true
+    }
+  },
+  "shownTactics": {
+    "d3f:Model": false,
+    "d3f:Harden": false,
+    "d3f:Detect": false,
+    "d3f:Isolate": false,
+    "d3f:Deceive": false,
+    "d3f:Evict": false
+  }
+};
+
+    const post_layers = (event) => {
+      const iframe = document.getElementById("iframe");
+
+      if (event.data?.call === "FromParent") {
+        iframe.contentWindow.postMessage(
+          {
+            call: "toParent",
+            value: user_data,
+          },
+          event.origin
+        );
+      }
+    };
+
+    window.addEventListener("message", (event) => {
+
+      if (event.origin !== "https://d3fend.mitre.org") return;
+
+      post_layers(event);
+    });
+  </script>
+
+  <style>
+    #iframe {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 100vh;
+      transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+    }
+  </style>
+</head>
+
+<main>
+  <iframe
+          id="iframe"
+          src="https://d3fend.mitre.org/profile/"
+          title="D3FEND Embedded" />
+</main>
+
+</html>
