@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3FEND EMBEDDED</title>
+
+    <script>
+      const user_data = {
+  "nodes": [
+    {
+      "id": "0.581653696636286",
+      "type": "agentSelectorNode",
+      "position": {
+        "x": -231.76773373692288,
+        "y": -279.86447933182404
+      },
+      "data": {
+        "label": "Operation Shadowcat",
+        "sequence": "0",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 243,
+        "height": 107
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 243,
+      "height": 107
+    },
+    {
+      "id": "0.4413793232667994",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -200.37812924611478,
+        "y": -15.197216736898362
+      },
+      "data": {
+        "label": "Initial Access: Spearphishing Attachment",
+        "sequence": "0",
+        "d3f_class": "d3f:T1598.002",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 279,
+        "height": 93
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 279,
+      "height": 93
+    },
+    {
+      "id": "0.13256944195839404",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 247.7564759861873,
+        "y": 301.9733932990606
+      },
+      "data": {
+        "label": ".LNK File \"office doc\"",
+        "sequence": "0",
+        "d3f_class": "d3f:FileSystemLink",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.6071601385874087",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 188.79116128408356,
+        "y": -63.86355667516352
+      },
+      "data": {
+        "label": "Email",
+        "sequence": "0",
+        "d3f_class": "d3f:Email",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.42705486882231847",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 208.7630520996877,
+        "y": 61.07933072109077
+      },
+      "data": {
+        "label": "Email Attachment",
+        "sequence": "0",
+        "d3f_class": "d3f:EmailAttachment",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.4798872031112791",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -194.20626671199057,
+        "y": 195.6201157946475
+      },
+      "data": {
+        "label": "Execution: Malicious File",
+        "sequence": "1",
+        "d3f_class": "d3f:T1204.002",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 123
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.10426293338922998",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 180.6331029268684,
+        "y": -278.0646541667991
+      },
+      "data": {
+        "label": "Inbound Internet Mail Traffic",
+        "sequence": "0",
+        "d3f_class": "d3f:InboundInternetMailTraffic",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 204,
+        "height": 82
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 204,
+      "height": 82
+    },
+    {
+      "id": "0.25835674899524097",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 290.9376520119956,
+        "y": 540.5027155115268
+      },
+      "data": {
+        "label": "Powershell script as arg",
+        "sequence": "0",
+        "d3f_class": "d3f:missing",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.7792835143423777",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 269.1256007093973,
+        "y": 420.608372815826
+      },
+      "data": {
+        "label": "powershell.exe",
+        "sequence": "0",
+        "d3f_class": "d3f:ExecutableBinary",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.04249325034853346",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 588.2694429922194,
+        "y": 499.4974123949197
+      },
+      "data": {
+        "label": "DOCX Document File",
+        "sequence": "0",
+        "d3f_class": "d3f:DocumentFile",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.3108464738831057",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 538.726377469877,
+        "y": 650.8978930261893
+      },
+      "data": {
+        "label": "DLL .NET Loader ",
+        "sequence": "0",
+        "d3f_class": "d3f:SharedLibraryFile",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.552059671457854",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 1049.664310739111,
+        "y": 837.5991657557679
+      },
+      "data": {
+        "label": "Steno PNG File",
+        "sequence": "0",
+        "d3f_class": "d3f:DigitalInformationBearer",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.2898381946203664",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 1121.7780698561933,
+        "y": 610.7102422766169
+      },
+      "data": {
+        "label": "Outbound Internet Web Traffic",
+        "sequence": "0",
+        "d3f_class": "d3f:OutboundInternetWebTraffic",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 227,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 227,
+      "height": 95
+    },
+    {
+      "id": "0.7535326980747047",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 228.7114055209784,
+        "y": 180.3893716841476
+      },
+      "data": {
+        "label": "Zip File",
+        "sequence": "0",
+        "d3f_class": "d3f:ArchiveFile",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.3294135325329819",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -194.45943081336736,
+        "y": 384.82112512061593
+      },
+      "data": {
+        "label": "Masquerade File Type",
+        "sequence": "2",
+        "d3f_class": "d3f:T1036.008",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 187,
+        "height": 93
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 187,
+      "height": 93
+    },
+    {
+      "id": "0.9674498279207843",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -187.41139480045933,
+        "y": 543.5877344114564
+      },
+      "data": {
+        "label": "File Deletion",
+        "sequence": "3",
+        "d3f_class": "d3f:T1107",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 177,
+        "height": 93
+      },
+      "selected": false,
+      "width": 177,
+      "height": 93,
+      "dragging": false
+    },
+    {
+      "id": "0.6835359685533496",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -165.18514550804846,
+        "y": 700.3471820981673
+      },
+      "data": {
+        "label": "PowerShell",
+        "sequence": "4",
+        "d3f_class": "d3f:T1086",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 123
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.34778388263272275",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -169.16475797695455,
+        "y": 851.548220166627
+      },
+      "data": {
+        "label": "Native API",
+        "sequence": "5",
+        "d3f_class": "d3f:T1106",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 224,
+        "height": 93
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 224,
+      "height": 93
+    },
+    {
+      "id": "0.921380612603658",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -161.19893498330316,
+        "y": 991.7212534670005
+      },
+      "data": {
+        "label": "Asynchronous Procedure Call",
+        "sequence": "6",
+        "d3f_class": "d3f:T1055.004",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 222,
+        "height": 100
+      },
+      "selected": false,
+      "width": 222,
+      "height": 100,
+      "dragging": false
+    },
+    {
+      "id": "0.7984230369581443",
+      "type": "attackSelectorNode",
+      "position": {
+        "x": -139.53287146372574,
+        "y": 1195.9277407509949
+      },
+      "data": {
+        "label": "Web Protocols",
+        "sequence": "7",
+        "d3f_class": "d3f:T1071.001",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 123
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.21872006297325297",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 362.46720843686956,
+        "y": 773.5329523272331
+      },
+      "data": {
+        "label": "powershell.exe",
+        "sequence": "0",
+        "d3f_class": "d3f:ExecutableBinary",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.03979030054819055",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 401.765038164518,
+        "y": 899.9476720899229
+      },
+      "data": {
+        "label": "Powershell script as arg",
+        "sequence": "0",
+        "d3f_class": "d3f:missing",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.9366371466114469",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 481.9603960113913,
+        "y": 1037.5179185430407
+      },
+      "data": {
+        "label": "Go RAT",
+        "sequence": "0",
+        "d3f_class": "d3f:ExecutableBinary",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.6553811899665475",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 764.2128557898541,
+        "y": 908.3378128025386
+      },
+      "data": {
+        "label": "Yara Rule",
+        "sequence": "0",
+        "d3f_class": "d3f:FileContentRules",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.5848797624184087",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 1190.5026754048322,
+        "y": 320.7522666801542
+      },
+      "data": {
+        "label": "Network Traffic Analysis",
+        "sequence": "0",
+        "d3f_class": "d3f:NetworkTrafficAnalysis",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 110
+      },
+      "selected": false
+    },
+    {
+      "id": "0.9621202021427397",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 835.5026754048322,
+        "y": 346.7522666801542
+      },
+      "data": {
+        "label": "Executable Allowlisting",
+        "sequence": "0",
+        "d3f_class": "d3f:ExecutableAllowlisting",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.30898977256836024",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 591.0449188118079,
+        "y": 307.3461035737941
+      },
+      "data": {
+        "label": "Disable powershell",
+        "sequence": "0",
+        "d3f_class": "d3f:PlatformHardening",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.48477799583965264",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 1230.7934432120667,
+        "y": 1180.992635586002
+      },
+      "data": {
+        "label": "General Antivirus file scanning (all files)",
+        "sequence": "0",
+        "d3f_class": "d3f:FileContentAnalysis",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 268,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 268,
+      "height": 110
+    },
+    {
+      "id": "0.2898381946203664-copy0.13536047675435314",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 808.2617435629143,
+        "y": 1087.0149816145886
+      },
+      "data": {
+        "label": "Outbound Internet Web Traffic",
+        "sequence": "0",
+        "d3f_class": "d3f:OutboundInternetWebTraffic",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 227,
+        "height": 95
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 227,
+      "height": 95
+    },
+    {
+      "id": "0.8419052487124239",
+      "type": "artifactSelectorNode",
+      "position": {
+        "x": 860.4530405503134,
+        "y": 646.7878436702997
+      },
+      "data": {
+        "label": "Create Process",
+        "sequence": "0",
+        "d3f_class": "d3f:CreateProcess",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 176,
+        "height": 99
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0.4032013612667408",
+      "type": "countermeasureSelectorNode",
+      "position": {
+        "x": 564.9495817525076,
+        "y": -127.65302706013556
+      },
+      "data": {
+        "label": "Email Attachment Policy",
+        "sequence": "0",
+        "d3f_class": ":EmailAttachmentPolicy",
+        "user_properties": []
+      },
+      "origin": [
+        0.5,
+        0
+      ],
+      "measured": {
+        "width": 221,
+        "height": 100
+      },
+      "selected": false,
+      "width": 221,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "contains"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.6071601385874087",
+      "sourceHandle": "source",
+      "target": "0.42705486882231847",
+      "targetHandle": "target",
+      "id": "xy-edge__0.6071601385874087source-0.42705486882231847target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "sends"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4413793232667994",
+      "sourceHandle": "source",
+      "target": "0.6071601385874087",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4413793232667994source-0.6071601385874087target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "downloads"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.581653696636286",
+      "sourceHandle": "source",
+      "target": "0.4413793232667994",
+      "targetHandle": "target",
+      "id": "xy-edge__0.581653696636286source-0.4413793232667994target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4798872031112791",
+      "sourceHandle": "source",
+      "target": "0.13256944195839404",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4798872031112791source-0.13256944195839404target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "precedes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4413793232667994",
+      "sourceHandle": "source",
+      "target": "0.4798872031112791",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4413793232667994source-0.4798872031112791target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "contains"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.10426293338922998",
+      "sourceHandle": "source",
+      "target": "0.6071601385874087",
+      "targetHandle": "target",
+      "id": "xy-edge__0.10426293338922998source-0.6071601385874087target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "executes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.13256944195839404",
+      "sourceHandle": "source",
+      "target": "0.7792835143423777",
+      "targetHandle": "target",
+      "id": "xy-edge__0.13256944195839404source-0.7792835143423777target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.7792835143423777",
+      "sourceHandle": "source",
+      "target": "0.25835674899524097",
+      "targetHandle": "target",
+      "id": "xy-edge__0.7792835143423777source-0.25835674899524097target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "creates"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.25835674899524097",
+      "sourceHandle": "source",
+      "target": "0.04249325034853346",
+      "targetHandle": "target",
+      "id": "xy-edge__0.25835674899524097source-0.04249325034853346target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "creates"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.25835674899524097",
+      "sourceHandle": "source",
+      "target": "0.3108464738831057",
+      "targetHandle": "target",
+      "id": "xy-edge__0.25835674899524097source-0.3108464738831057target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "downloads"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.3108464738831057",
+      "sourceHandle": "source",
+      "target": "0.552059671457854",
+      "targetHandle": "target",
+      "id": "xy-edge__0.3108464738831057source-0.552059671457854target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "contains"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.2898381946203664",
+      "sourceHandle": "source",
+      "target": "0.552059671457854",
+      "targetHandle": "target",
+      "id": "xy-edge__0.2898381946203664source-0.552059671457854target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "contains"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.7535326980747047",
+      "sourceHandle": "source",
+      "target": "0.13256944195839404",
+      "targetHandle": "target",
+      "id": "xy-edge__0.7535326980747047source-0.13256944195839404target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "contains"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.42705486882231847",
+      "sourceHandle": "source",
+      "target": "0.7535326980747047",
+      "targetHandle": "target",
+      "id": "xy-edge__0.42705486882231847source-0.7535326980747047target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.3294135325329819",
+      "sourceHandle": "source",
+      "target": "0.13256944195839404",
+      "targetHandle": "target",
+      "id": "xy-edge__0.3294135325329819source-0.13256944195839404target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.9674498279207843",
+      "sourceHandle": "source",
+      "target": "0.13256944195839404",
+      "targetHandle": "target",
+      "id": "xy-edge__0.9674498279207843source-0.13256944195839404target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.3108464738831057",
+      "sourceHandle": "source",
+      "target": "0.21872006297325297",
+      "targetHandle": "target",
+      "id": "xy-edge__0.3108464738831057source-0.21872006297325297target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.21872006297325297",
+      "sourceHandle": "source",
+      "target": "0.03979030054819055",
+      "targetHandle": "target",
+      "id": "xy-edge__0.21872006297325297source-0.03979030054819055target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.03979030054819055",
+      "sourceHandle": "source",
+      "target": "0.9366371466114469",
+      "targetHandle": "target",
+      "id": "xy-edge__0.03979030054819055source-0.9366371466114469target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "detects"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.6553811899665475",
+      "sourceHandle": "source",
+      "target": "0.9366371466114469",
+      "targetHandle": "target",
+      "id": "xy-edge__0.6553811899665475source-0.9366371466114469target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.5848797624184087",
+      "sourceHandle": "source",
+      "target": "0.2898381946203664",
+      "targetHandle": "target",
+      "id": "xy-edge__0.5848797624184087source-0.2898381946203664target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "blocks"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.9621202021427397",
+      "sourceHandle": "source",
+      "target": "0.3108464738831057",
+      "targetHandle": "target",
+      "id": "xy-edge__0.9621202021427397source-0.3108464738831057target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.30898977256836024",
+      "sourceHandle": "source",
+      "target": "0.7792835143423777",
+      "targetHandle": "target",
+      "id": "xy-edge__0.30898977256836024source-0.7792835143423777target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.6835359685533496",
+      "sourceHandle": "source",
+      "target": "0.25835674899524097",
+      "targetHandle": "target",
+      "id": "xy-edge__0.6835359685533496source-0.25835674899524097target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.6835359685533496",
+      "sourceHandle": "source",
+      "target": "0.03979030054819055",
+      "targetHandle": "target",
+      "id": "xy-edge__0.6835359685533496source-0.03979030054819055target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.34778388263272275",
+      "sourceHandle": "source",
+      "target": "0.3108464738831057",
+      "targetHandle": "target",
+      "id": "xy-edge__0.34778388263272275source-0.3108464738831057target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "creates"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.9366371466114469",
+      "sourceHandle": "source",
+      "target": "0.2898381946203664-copy0.13536047675435314",
+      "targetHandle": "target",
+      "id": "xy-edge__0.9366371466114469source-0.2898381946203664-copy0.13536047675435314target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.921380612603658",
+      "sourceHandle": "source",
+      "target": "0.3108464738831057",
+      "targetHandle": "target",
+      "id": "xy-edge__0.921380612603658source-0.3108464738831057target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "invokes"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.3108464738831057",
+      "sourceHandle": "source",
+      "target": "0.8419052487124239",
+      "targetHandle": "target",
+      "id": "xy-edge__0.3108464738831057source-0.8419052487124239target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "blocks"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4032013612667408",
+      "sourceHandle": "source",
+      "target": "0.42705486882231847",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4032013612667408source-0.42705486882231847target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "blocks"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4032013612667408",
+      "sourceHandle": "source",
+      "target": "0.7535326980747047",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4032013612667408source-0.7535326980747047target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "blocks"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.4032013612667408",
+      "sourceHandle": "source",
+      "target": "0.13256944195839404",
+      "targetHandle": "target",
+      "id": "xy-edge__0.4032013612667408source-0.13256944195839404target",
+      "selected": false
+    },
+    {
+      "type": "editableEdge",
+      "data": {
+        "label": "implements"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "source": "0.7984230369581443",
+      "sourceHandle": "source",
+      "target": "0.9366371466114469",
+      "targetHandle": "target",
+      "id": "xy-edge__0.7984230369581443source-0.9366371466114469target",
+      "selected": false
+    }
+  ]
+};
+
+      const post_cad = (event) => {
+        const iframe = document.getElementById("iframe");
+
+        if (event.data?.call === "FromParent") {
+          iframe.contentWindow.postMessage(
+            {
+              call: "toParent",
+              value: user_data,
+            },
+            event.origin
+          );
+        }
+      };
+
+      window.addEventListener("message", (event) => {
+
+        if (event.origin !== "https://next.d3fend.mitre.org") return;
+
+        post_cad(event);
+      });
+    </script>
+
+    <style>
+      #iframe {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        transform: scale(90%);
+        -moz-transform: scale(90%);
+        -o-transform: scale(90%);
+        -webkit-transform: scale(90%);
+      }
+    </style>
+  </head>
+
+  <main>
+    <iframe
+      id="iframe"
+      src="https://next.d3fend.mitre.org/cad-frame/"
+      title="D3FEND CAD Embedded"
+    ></iframe>
+  </main>
+</html>
+
